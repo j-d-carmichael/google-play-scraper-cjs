@@ -1,0 +1,30 @@
+{
+  "name": "google-play-scraper-cjs",
+  "version": "10.0.0",
+  "description": "Wraps google-play-scraper to permit installation in a typescript/commonjs app/api",
+  "keywords": [
+    "google-play-scraper",
+    "CommonJS"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "esbuild dist/index.d.ts --platform=node --bundle --format=cjs --outfile=dist/index.js",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/j-d-carmichael/google-play-scraper-cjs.git"
+  },
+  "author": "John Carmichael",
+  "license": "MIT",
+  "files": [
+    "dist/**/*"
+  ],
+  "dependencies": {
+    "google-play-scraper": "^10.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.17.3"
+  }
+}

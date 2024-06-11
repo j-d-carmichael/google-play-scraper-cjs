@@ -1,2 +1,6 @@
 # google-play-scraper-cjs
-CJS wrapper fpr Google-Play-Scraper
+
+This is a simple import export in CJS of the google-play-scraper npm package.
+
+
+
